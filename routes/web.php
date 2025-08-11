@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OdooApiController;
 use App\Http\Controllers\PublicViewController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/public-list', [PublicViewController::class, 'index']);
+Route::get('/odoo-user', [OdooApiController::class, 'index']);
